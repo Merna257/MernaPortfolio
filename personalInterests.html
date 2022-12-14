@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.jpeg">
+    <title>Personal Interests | Merna Saad</title>
+  </head>
+  <body>
+    <div id="galleryApp">
+      <header>
+        <!-- Navigational menu used on all pages -->
+        <nav>
+          <ul class="mainMenu">
+            <li class="mainMenuItem"><a href="index.html">Home</a></li>
+            <li class="mainMenuItem"><a href="about.html">About</a></li>
+            <li class="mainMenuItem"><a href="resume.html">Résumé</a></li>
+            <li class="mainMenuItem"><a href="personalInterests.html">Personal Interests</a></li>
+            <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
+            <li class="mainMenuItem"><a href="quiz.html">Quiz</a></li>
+            <li class="mainMenuItem" id="navName">Merna Saad</li>
+          </ul>
+        </nav>
+  
+        <h1>What I like</h1>
+      </header>
+      <main>
+        <h2 id="heading">Thanks for your time!</h2>
+        <p>
+          I have a range of interests, including cooking, drawing, traveling, hiking, and home improvement projects such as carpentry and painting. I have a passion for the creative arts and enjoy using my free time to try new recipes and work on sketches. I also love the outdoors and often go hiking in beautiful, scenic locations. On this page, you can find some of my recipes, drawings, and examples of my home improvement projects.
+        </p>
+        <div id="featuredGalleryImageDiv">
+          <button class="button" @click="displayPrevious()">
+            &lt;
+          </button>
+
+          <img id="featuredGalleryImage" :src="featuredGalleryImageSrc" :alt="featuredGalleryImageAlt">
+          
+          <button class="button" @click="displayNext()">
+            >
+          </button>
+        </div>
+        <img class="gallery" :src="img1.src" :alt="img1.alt" id="img1" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img2.src" :alt="img2.alt" id="img2" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img3.src" :alt="img3.alt" id="img3" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img4.src" :alt="img4.alt" id="img4" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img5.src" :alt="img5.alt" id="img5" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img6.src" :alt="img6.alt" id="img6" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img7.src" :alt="img7.alt" id="img7" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img8.src" :alt="img8.alt" id="img8" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img9.src" :alt="img9.alt" id="img9" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img10.src" :alt="img10.alt" id="img10" @click="selectImage($event.target.id)">
+        <img class="gallery" :src="img11.src" :alt="img11.alt" id="img11" @click="selectImage($event.target.id)">
+
+        <noscript>
+          <p><i>JavaScript must be enabled in order to display the media on this page, sorry!</i></p>
+        </noscript>
+  
+      </main>
+      <footer>
+        © Copyright 2022 Merna Saad
+      </footer>
+    </div>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./Javascript/gallery.js"></script>
+  </body>
+</html>

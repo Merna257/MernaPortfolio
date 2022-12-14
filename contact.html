@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.jpeg">
+    <title>Contact | Merna Saad</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigational menu used on all pages -->
+      <nav>
+        <ul class="mainMenu">
+          <li class="mainMenuItem"><a href="index.html">Home</a></li>
+          <li class="mainMenuItem"><a href="about.html">About</a></li>
+          <li class="mainMenuItem"><a href="resume.html">Résumé</a></li>
+          <li class="mainMenuItem"><a href="personalInterests.html">Personal Interests</a></li>
+          <li class="mainMenuItem"><a href="contact.html">Contact</a></li>
+          <li class="mainMenuItem"><a href="quiz.html">Quiz</a></li>
+          <li class="mainMenuItem" id="navName">Merna Saad</li>
+        </ul>
+      </nav>
+
+      <h1>Contact</h1>
+
+    </header>
+    <main id="contactPage">
+      <div id="contactPageText">
+        <p>
+          Reach out or check out my projects by following the links below,
+          or fill out the contact form to the right.
+        </p>
+        <h4>Email:</h4><p>merna2020saad@gmail.com</p>
+        <h4>GitHub:</h4><a href="https://github.com/Merna257" target="_blank">github.com/MernaSaad</a>
+        <h4>LinkedIn:</h4><a href="https://www.linkedin.com/in/merna-saad-1557a71bb/" target="_blank">linkedin.com/in/merna-saad</a>
+      </div>
+
+      <div class="card" id="contactFormDiv">
+        <h3 id="contactFormHeader">Get into contact with me!</h3>
+        <h4 id="submissionMessage">Thanks for your submission! I will try to respond in a timely manner.</h4>
+        <form
+          id="contactForm"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <!-- Text inputs -->
+          <h4>Your contact information</h4>
+          <label class="text" for="name">Name:</label>
+          <input class="text" type="text" id="name" name="name" required>
+          <br />
+          <label class="text" for="email">Email Address:</label>
+          <input class="text" type="email" id="email" name="email" required>
+          <br />
+          <p id="contactFormErrorMessage"></p>
+  
+          <!-- Select box -->
+          <h4>How did you find my website?</h4>
+          <select id="select" name="select">
+            <option class="select" value="placeholder" disabled selected>Select one</option>
+            <option class="select" value="A Boston University class">A Boston University class</option>
+            <option class="select" value="Google/other search engine">Google/other search engine</option>
+            <option class="select" value="Job application">Job application</option>
+            <option class="select" value="Other">Other</option>
+          </select>
+  
+          <!-- Text area input -->
+          <h4>Message</h4>
+          <textarea id="formMessage" name="message" rows="5" cols="50"></textarea>
+          <br />
+  
+          <!-- Submit button -->
+          <input id="submitFormButton" class="button" type="submit" name="submitButton" value="Submit">
+  
+          <noscript>
+            <p><i>JavaScript must be enabled in order to submit this form, sorry! Try another method of contact.</i></p>
+          </noscript>
+        </form>
+      </div>
+      <script src="Javascript/form_validation.js"></script>
+    </main>
+    <footer>
+      © Copyright 2022 Merna Saad
+    </footer>
+  </body>
+</html>

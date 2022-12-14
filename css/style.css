@@ -1,0 +1,347 @@
+:root {
+  /* Main colors */
+  --link: #9b5f62;
+  --link-highlight: #E8C5C6;
+  --background: #1D1D2C;
+  --card-color: #c58c37;
+  --card-color-highlight: #9b5f62;
+  --nav-bar: #F7F4E9;
+  --nav-bar-highlight: #7a7a93;
+  --main-text: #f4f0ee;
+  --secondary-text: #477848;
+  --button: #9b5f62;
+  --button-hover: #D6999C;
+  --button-active: #E2B6B8;
+}
+ 
+  /* General component styling */
+  body {
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--link);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h2, h3, h4 {
+    color: var(--secondary-text);
+  }
+  
+  h2 {
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h4 {
+    font-weight: lighter;
+    font-size: 1.3rem;
+  }
+  
+  a, #navName {
+    text-decoration: none;
+    color: var(--link);
+  }
+  
+  a:hover {
+    color: var(--link-highlight);
+  }
+  
+  p, label.text, table {
+    font-size: 1.3rem;
+    text-align: justify;
+    color:var(--main-text);
+  }
+  
+  main {
+    padding: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+  
+  footer {
+    font-size: 0.75rem;
+    color: var(--link);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  .card {
+    background-color: var(--card-color);
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+  }
+  .button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  
+    font-size: 1rem;
+    color: var(--background);
+    background-color: var(--button);
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover);
+    transition-duration: 0.5s;
+  }
+  
+  .button:active {
+    background-color: var(--button-active);
+  }
+  
+  noscript p {
+    color: rgb(185, 90, 90);
+    text-align: center;
+  }
+  
+  /* Home page styling */
+  #home-header {
+    background-color: var(--nav-bar);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  #home-header:hover {
+    background-color: var(--nav-bar-highlight);
+    transition-duration: 0.5s;
+  }
+  
+  #home-body {
+    background-image: url('../images/seattle2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #home-content {
+    display: inline-block;
+  }
+  
+  #home-content:hover {
+    background-color: var(--card-color-highlight);
+    transition-duration: 0.5s;
+  }
+  
+  /* Main menu / navigation styling */
+  header {
+    margin: -0.5rem;
+    margin-top: -0.6rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  nav {
+    background-color: var(--nav-bar);
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  
+  .mainMenu {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 1rem;
+    padding-left: 0rem;
+    margin: 0;
+    align-items: center
+    
+  }
+  
+  .mainMenuItem {
+    display: inline-block;
+  }
+  
+  .mainMenuItem a {
+    font-size: 1.2rem;
+    padding: 2.5rem;
+    
+  }
+  
+  .mainMenuItem a:hover {
+    background-color: var(--nav-bar-highlight);
+    color: var(--link-highlight);
+    transition-duration: 0.3s;
+  }
+  
+  #navName {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    float: right;
+  }
+  
+  /* About page styling */
+  #about-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  
+  #about-card {
+    text-align: center;
+    width: fit-content;
+    float: right;
+    margin-bottom: 3rem;
+  }
+  
+  table {
+    display: inline;
+    text-align: left;
+  }
+  
+  th {
+    padding-right: 3rem;
+  }
+  
+  /* Personal Interests page styling */
+  iframe {
+    border: 1rem solid var(--nav-bar);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+  
+  #featuredGalleryImageDiv {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  #featuredGalleryImageDiv button {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 3rem;
+    border-radius: 2rem;
+  }
+  
+  #featuredGalleryImage {
+    width: 550px;
+    height: 500px;
+  }
+  
+  .gallery {
+    width: 100px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+  }
+  
+  .gallery:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    border-color: var(--link);
+    
+  }
+  
+  
+  /* Resume page styling */
+  #resume {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* Contact page styling */
+  #contactPage {
+    display: flex;
+  }
+  
+  #contactPageText {
+    padding-right: 2rem;
+  }
+  
+  #contactFormDiv {
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  #submissionMessage {
+    display: none;
+  }
+  
+  #contactForm {
+    display: inline-block;
+    text-align: right;
+  }
+  
+  #contactFormErrorMessage {
+    color: rgb(245, 78, 78);
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  /* Quiz page styling */
+ 
+  
+  .quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+    
+    
+  }
+  .quiz-header{
+    padding: 4rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  ul li label{
+    cursor: pointer;
+  }
+
+  
+  /* Adjustments for small screen sizes */
+  @media screen and (max-width: 500px) {
+  
+    /* Allow menu items to stack */
+    .mainMenuItem {
+      display: flex;
+    }
+  
+    #contactPage {
+      display: inline;
+    }
+  
+    /* Increase some text size */
+    a, p {
+      font-size: 1.5rem;
+    }
+  
+  }
